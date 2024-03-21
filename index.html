@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Lista</title>
+</head>
+
+<body class="body">
+
+ <div class="firststyle" >
+
+<div onclick="abrirmodal()" class="btn "><button class="btnbutton">Adicione Produtos </button> </div>
+
+
+</div>
+
+
+<div class="geralstyle">
+
+ <!----> 
+ <table class="table">  
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Preço</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Deletar</th>
+      </tr>
+    </thead>
+    <tbody id="corpo"></tbody>
+  </table>
+
+  <!---->
+
+    <div class="janelamodal" id="janelamodal"> 
+
+  <div class="modal" >
+    
+    <h1>Adicione Produtos</h1>
+    <p>
+      <b> Adicionar Produtos com Segurança.</b>
+      
+      <b>Informações Precisas:</b> <br> Preencha corretamente nome, descrição, categoria, preço e quantidade do produto. <br> </p>
+      
+        <p>Preencha o campo abaixo</p>
+    <input class="barradetexto" type="number" placeholder="ID"> 
+    <input class="barradetexto" type="text" placeholder="NOME">
+    <input class="barradetexto" type="number" placeholder="VALOR">
+    <button>Enviar</button>
+
+
+ 
+ </div>
+    </div>
+
+ <script src="script.js"></script>
+
+
+</div>
+
+
+</body>
+</html>
