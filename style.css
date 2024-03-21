@@ -1,0 +1,144 @@
+.teste {
+    color: red;
+  }
+  button {
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    opacity: 0.8;
+    
+  }
+.geralstyle{
+    display: flex;
+    width: 100%;
+}
+
+
+
+.btnbutton:hover{
+    background-color: green;
+}
+
+
+.body{
+    background-color: rgb(226,135,67);
+    position: fixed;
+    margin: 20px, 20px, 20px ,20px;
+}
+
+
+.btnbutton{
+position: absolute;
+width: 18vw;
+height: 9vh;
+margin-top: 550px;
+margin-left: 150px;
+color: #063970;
+border-radius: 20px;
+font-size: 20px;   
+min-width: 100px;
+text-align: center;
+background-color: #a5acaf;
+
+}
+
+
+.janelamodal{
+    width: 70vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+
+}
+
+
+.modal {
+    width: 60%;
+    min-width: 450px;
+    min-height: 200px;
+    background-color:#ffffff96;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+    margin-right: 80px;
+    
+}
+
+
+.barradetexto{
+    width: 60%;
+    height: 5vh;
+    margin-inline: 20%;
+    margin-block: 1%;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+}
+
+.fechar{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 25px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.janelamodal.abrir{
+    display: flex;
+}
+
+.janelamodal button{
+    margin-top: 30px;
+    margin-left: 220px;
+    
+}
+
+.modal h1 ,p {
+    text-align: center;
+}
+
+
+.table{
+    margin: 30px, 30px, ;
+    width: 500px;
+    height: 500px;
+    color: green;
+    
+    background-color: white;
+}
+.table button{
+    color: green;
+}
+
+
+
+
+
+@keyframes abrirmodal{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -20px, -5px);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+
+
+.abrir .modal{
+    animation: abrirmodal 0.5s;
+}
